@@ -1,20 +1,19 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+"use client";
+
 import "./globals.css";
-import Navbar from "./components/navbar";
-
-
+import Navbar from "@/app/components/navbar";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body>
         <Navbar />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );

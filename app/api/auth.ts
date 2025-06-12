@@ -2,10 +2,10 @@ import { createPool, PoolConnection } from 'mysql2/promise';
 import bcrypt from 'bcrypt';
 
 const pool = createPool({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'your_database',
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || '',
+    database: process.env.DB_NAME || 'personal_trainer',
 });
 
 interface User {
